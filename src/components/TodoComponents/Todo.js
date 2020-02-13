@@ -1,10 +1,11 @@
 import React from 'react'
+import './Todo.scss'
 
 function Todo(props) {
     console.log(props);
     return (
         <div
-        className="wrapper"
+        className={`item${props.item.completed ? " completed" : ""}`}
         onClick={() => props.toggleItem(props.item.id)}
         >
             <p>{props.item.task}</p>

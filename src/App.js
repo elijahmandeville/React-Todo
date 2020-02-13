@@ -1,6 +1,7 @@
 import React from 'react';
 import TodoList from './components/TodoComponents/TodoList';
 import TodoForm from './components/TodoComponents/TodoForm';
+import './App.css'
 
 const toDoList = [];
 
@@ -33,7 +34,10 @@ class App extends React.Component {
   addTodo = e => {
     e.preventDefault();
 
+    console.log("Target: ", e)
+
     this.addItem(e, this.state.item)
+
   }
 
   handleChange = e => {
