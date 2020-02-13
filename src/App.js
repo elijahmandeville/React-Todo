@@ -59,7 +59,7 @@ class App extends React.Component {
     e.preventDefault();
 
     this.setState({
-      toDoList: this.state.toDoList.filter(item => item.purchased === true)
+      toDoList: this.state.toDoList.filter(item => item.completed === false)
     })
   }
 
