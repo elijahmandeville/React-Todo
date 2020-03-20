@@ -6,9 +6,18 @@
   text-align: center;
   margin: 4px 0;
   cursor: pointer;
-}
 
-p {
+  p {
     color: white;
     font-size: 1.4rem;
+  }
+}
+
+.item.completed {
+  background-color: gray;
+
+  p {
+      color: black;
+      text-decoration: line-through;
+  }
 }
